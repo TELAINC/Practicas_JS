@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos</title>
+</head>
+
+<body>
+    <section>
+        <a href="/prueba8.html">ANTERIOR</a>
+        <a href="/prueba.html">INICIO</a>
+        <a href="/prueba10.html">SIGUIENTE</a>
+    </section>
+    <script>
+        var miobj = {
+            nombre: "Juan",
+            edad: 30,
+            mostrardatos: function () {
+                var mensaje = "Nombre: " + miobj.nombre + "\r\n"
+                mensaje += "Edad: " + miobj.edad+ "\r\n"
+                mensaje += "PRUEBA"
+                alert(mensaje);
+            },
+            cambiarnom: function (nombrenew) {
+                miobj.nombre = nombrenew;
+            }
+        };
+        miobj.mostrardatos();
+        miobj.cambiarnom("Jose");
+        miobj.mostrardatos();
+    </script>
+    <script>
+        var miobje = {
+            nombre: "Rafael",
+            edad: 31,
+            mostrardatos: function () {
+                var mensaje = "Nombre: "+miobje.nombre+ "\r\n";
+                mensaje = "Edad: " +miobje.edad;
+                alert(mensaje);
+            },
+            cambianomb: function(nombrenews){
+                var nombreviejo = miobje.nombre;
+                miobje.nombre= nombrenews;
+                return nombreviejo;
+            }
+        };
+        var anterior =  miobje.cambianomb("Paquito");
+        alert("El nombre anterior era: " +anterior)
+    </script>
+</body>
+
+</html>

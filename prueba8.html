@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <a href="/prueba7.html">ANTERIOR</a>
+        <a href="/prueba.html">INICIO</a>
+        <a href="/prueba9.html">SIGUIENTE</a>
+    </section>
+    <script>
+        var mivar = 5;
+        function lafuncion() {
+            var mivar = "esta es una variable local";
+            alert(mivar);
+        }
+        lafuncion;
+        alert(mivar);
+
+        function mifuncion(valor) {
+            alert("este es el valor numerico: " + valor + " de la funcion")
+        }
+        mifuncion(6);
+        mifuncion(12);
+        mifuncion(mivar);
+
+        var contador = 100;
+        var items = 5;
+        function esfuncion(valor1, valor2){
+            var total = valor1 + valor2;
+            return total;
+        }
+        var resultado = esfuncion(contador, items);
+        alert(resultado);
+
+    </script>
+</body>
+
+</html>

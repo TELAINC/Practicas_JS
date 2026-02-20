@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto window</title>
+    <script>
+        function agregarElemento() {
+            var elemento  = document.querySelector("section");
+            elemento.insertAdjacentHTML("beforeend", "<p> TEXTO AGREGADO");
+        }
+    </script>
+</head>
+<body>
+    <section>
+      <h1>Sitio de algo</h1>
+      <button type="button" onclick="agregarElemento()">Agregar contenido</button>
+    </section>
+</body>
+
+</html>

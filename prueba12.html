@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objetos string</title>
+</head>
+
+<body>
+    <section>
+        <a href="/prueba11.html">ANTERIOR</a>
+        <a href="/prueba.html">INICIO</a>
+        <a href="/prueba13.html">SIGUIENTE</a>
+    </section>
+    <script>
+        var texto = "Lorem ipsum dolor sit amet consectetur."
+        //var msg = "El lorem tiene mas de " + texto.length + " caracteres\r\n"
+        var msg = texto.toUpperCase();
+        //alert(texto);
+        //var msg = "";
+        //for (var f = 0; f < texto.length; f++) {
+        //  msg += texto[f] + " ";
+        //}
+        alert(msg);
+
+    </script>
+    <script> 
+        var texto = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+        var palabra = texto.substr(6,7);
+        alert(palabra);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructores</title>
+</head>
+
+<body>
+    <section>
+        <a href="/prueba9.html">ANTERIOR</a>
+        <a href="/prueba.html">INICIO</a>
+        <a href="/Prueba11.html">SIGUIENTE</a>
+    </section>
+    <script>
+        var constructor = function () {
+            var obj = {
+                nombre: "Don",
+                edad: 25,
+                mostrarnombre: function () {
+                    alert(this.nombre);
+                },
+                cambiarnombre: function (nombrenew) {
+                    this.nombre = nombrenew;
+                }
+            };
+            return obj;
+        }
+        var empleado = constructor();
+        empleado.mostrarnombre();
+    </script>
+
+    <script>
+        var constructore = function (nombreini) {
+            var obj = {
+                nombres: nombreini,
+                edade: 21,
+                mostrarnombre: function () {
+                    alert(this.nombres)
+                },
+                cambiarnombre: function (nombrenew) {
+                    this.nombres = nombrenew
+                }
+            };
+            return obj;
+        };
+        var empleado1 = constructore("Pepe");
+        var empleado2 = constructore("Diego");
+        var empleado3 = constructore("Mexw");
+        alert(empleado1.nombres + ", " +empleado2.nombres+ ", " +empleado3.nombres)
+
+    </script>
+</body>
+
+</html>

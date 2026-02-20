@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herencia</title>
+</head>
+
+<body>
+    <section>
+        <a href="/Prueba10.html">ANTERIOR</a>
+        <a href="/prueba.html">INICIO</a>
+        <a href="/prueba12.html">SIGUIENTE</a>
+    </section>
+    <Script>
+        //279aximo
+        var miobj = {
+            nombre: "ITZU",
+            edad: 30,
+            mostrarnombre: function () {
+                alert(this.nombre);
+            },
+            cammbiarnombre: function (nombrenew) {
+                this.nombre = nombrenew;
+            }
+        };
+        var empleado = Object.create(miobj);
+        empleado.cammbiarnombre('roberto');
+        empleado.mostrarnombre();
+        miobj.mostrarnombre();
+    </Script>
+    <script>
+        //280aximo
+        var miobje = {
+            nombres: "Alex",
+            eda: 21,
+            mostrarnombre: function () {
+                alert(this.nombres);
+            },
+            cambiarnombre: function (nombrenuevo) {
+                this.nombres = nombrenuevo;
+            }
+        };
+        var empleado = Object.create(miobje);
+        empleado.eda = 22;
+        miobje.mostraredad = function () {
+            alert(this.eda)
+        };
+        empleado.mostraredad();
+    </script>
+    <Script>
+        //281áximo
+        var miob = {
+            nombr: "Car",
+            ed: 24,
+            mostrarnombre: function () {
+                alert(this.nombr)
+            },
+            cambiarnombre: function (nombrene) {
+                this.nombr = nombrene;
+            }
+        };
+        var empleado1 = Object.create(miob);
+        var empleado2 = Object.create(empleado1);
+        var empleado3 = Object.create(empleado2);
+
+        miob.mostrareda=function(){
+            alert(miob.ed)
+        };
+        empleado2.mostraredad=function(){
+            alert(this.ed);
+        };
+        empleado3.ed= 21;
+        empleado3.mostraredad();
+        miob.mostrareda();
+    </Script>
+</body>
+
+</html>
